@@ -17,3 +17,15 @@ fun View.findActivity(): AppCompatActivity? {
     }
     return null
 }
+
+fun showViews(vararg views: View?) {
+    views.forEach {
+        it?.visibility = View.VISIBLE
+    }
+}
+
+fun goneViews(vararg views: View?) {
+    views.forEach {
+        it?.visibility = View.GONE
+    }
+}
