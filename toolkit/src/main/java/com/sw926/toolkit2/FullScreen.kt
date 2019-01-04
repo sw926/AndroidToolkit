@@ -2,10 +2,10 @@ package com.sw926.toolkit2
 
 import android.app.Activity
 import android.content.pm.ActivityInfo
-import android.graphics.drawable.GradientDrawable
 import android.os.Build
 import android.view.View
-import android.view.accessibility.AccessibilityNodeInfo
+import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 
 fun Int.addFlag(flag: Int): Int {
     return this or flag
@@ -51,12 +51,23 @@ object FullScreen {
     }
 
     fun enterFullScreen(activity: Activity) {
+
+        if (activity is AppCompatActivity) {
+            activity.supportActionBar?.hide()
+        } else {
+            activity.actionBar?.hide()
+        }
+
+        val attrs = activity.window.attributes
+        attrs.flags = attrs.flags or WindowManager.LayoutParams.FLAG_FULLSCREEN
+        attrs.flags = attrs.flags or WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
+        activity.window.attributes = attrs
+
         var uiOptions = activity.window.decorView.systemUiVisibility
 
         uiOptions = uiOptions or View.SYSTEM_UI_FLAG_LOW_PROFILE
         uiOptions = uiOptions or View.SYSTEM_UI_FLAG_FULLSCREEN
         uiOptions = uiOptions or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             uiOptions = uiOptions or View.SYSTEM_UI_FLAG_IMMERSIVE
@@ -67,6 +78,17 @@ object FullScreen {
     }
 
     fun existFullScreen(activity: Activity) {
+        if (activity is AppCompatActivity) {
+            activity.supportActionBar?.show()
+        } else {
+            activity.actionBar?.show()
+        }
+
+        val attrs = activity.window.attributes
+        attrs.flags = attrs.flags and WindowManager.LayoutParams.FLAG_FULLSCREEN.inv()
+        attrs.flags = attrs.flags and WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON.inv()
+        activity.window.attributes = attrs
+
         var uiOptions = activity.window.decorView.systemUiVisibility
 
         uiOptions = uiOptions and View.SYSTEM_UI_FLAG_LOW_PROFILE.inv()

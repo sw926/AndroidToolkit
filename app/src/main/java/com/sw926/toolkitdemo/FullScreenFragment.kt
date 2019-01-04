@@ -11,6 +11,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProviders
 import com.sw926.toolkit2.FullScreen
+import com.sw926.toolkit2.findActiviy
 import com.sw926.toolkitdemo.databinding.FragmentFullScreenBinding
 
 /**
@@ -22,15 +23,15 @@ class FullScreenFragment : Fragment() {
     class FullScreenModel : ViewModel() {
 
         fun onClickSwitchOrientation(view: View) {
-            (view.context as? Activity)?.let { FullScreen.toggleScreenOrientation(it) }
+           view.findActiviy()?.let { FullScreen.toggleScreenOrientation(it) }
         }
 
         fun onClickFullScreen(view: View) {
-            (view.context as? Activity)?.let { FullScreen.enterFullScreen(it) }
+           view.findActiviy()?.let { FullScreen.enterFullScreen(it) }
         }
 
         fun onClickExistFullScreen(view: View) {
-            (view.context as? Activity)?.let { FullScreen.existFullScreen(it) }
+           view.findActiviy()?.let { FullScreen.existFullScreen(it) }
         }
     }
 
