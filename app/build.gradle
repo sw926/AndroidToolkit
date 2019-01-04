@@ -35,6 +35,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 
+    implementation 'com.android.support:support-v4:28.0.0'
     testImplementation 'junit:junit:4.12'
     implementation project(':toolkit')
 
@@ -43,10 +44,12 @@ dependencies {
     implementation 'android.arch.lifecycle:runtime:1.1.1'
 
 
-    implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha09" // use -ktx for Kotlin
+    implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha09"
+    // use -ktx for Kotlin
     implementation "android.arch.navigation:navigation-ui-ktx:1.0.0-alpha09" // use -ktx for Kotlin
 
 // optional - Test helpers
-    androidTestImplementation "android.arch.navigation:navigation-testing-ktx:1.0.0-alpha06" // use -ktx for Kotlin
+    androidTestImplementation "android.arch.navigation:navigation-testing-ktx:1.0.0-alpha06"
+    // use -ktx for Kotlin
 
 }

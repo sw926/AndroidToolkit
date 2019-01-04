@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".HomeFragment"
     tools:ignore="HardcodedText">
 
@@ -11,5 +12,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Full Screen" />
+
+    <Button
+        android:id="@+id/btnStatusVisibility"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status Visibility" />
 
 </LinearLayout>
