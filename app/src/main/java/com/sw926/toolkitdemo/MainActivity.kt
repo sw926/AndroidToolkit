@@ -1,7 +1,7 @@
 package com.sw926.toolkitdemo
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import android.support.v7.app.AppCompatActivity
 import androidx.navigation.findNavController
 
 class MainActivity : AppCompatActivity() {

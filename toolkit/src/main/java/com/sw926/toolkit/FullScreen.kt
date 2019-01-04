@@ -1,11 +1,11 @@
-package com.sw926.toolkit2
+package com.sw926.toolkit
 
 import android.app.Activity
 import android.content.pm.ActivityInfo
 import android.os.Build
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.view.WindowManager
-import androidx.appcompat.app.AppCompatActivity
 
 fun Int.addFlag(flag: Int): Int {
     return this or flag
