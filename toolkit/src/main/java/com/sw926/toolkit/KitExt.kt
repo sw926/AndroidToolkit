@@ -53,10 +53,10 @@ fun Context.sp2px(dp: Float) = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT
 /**
  * 创建一个AlertDialog.Builder
  */
-fun Context.nashAlertDialog(): AlertDialog.Builder = AlertDialog.Builder(this)
+fun Context.alertDialog(): AlertDialog.Builder = AlertDialog.Builder(this)
 
-fun Context.nashAlertDialog(message: String? = null): AlertDialog.Builder {
-    val builder = nashAlertDialog()
+fun Context.alertDialog(message: String? = null): AlertDialog.Builder {
+    val builder = alertDialog()
     message?.let {
         builder.setMessage(it)
     }
