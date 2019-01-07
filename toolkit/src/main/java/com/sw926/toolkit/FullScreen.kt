@@ -1,3 +1,5 @@
+@file:Suppress("unused")
+
 package com.sw926.toolkit
 
 import android.app.Activity
