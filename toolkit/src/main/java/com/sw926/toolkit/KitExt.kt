@@ -181,7 +181,7 @@ fun View.locationOnScreen(): IntArray {
     return array
 }
 
-fun catchError(action: () -> Unit) {
+inline fun catchError(action: () -> Unit) {
     try {
         action.invoke()
     } catch (e: Throwable) {
@@ -190,7 +190,7 @@ fun catchError(action: () -> Unit) {
 }
 
 
-fun <T> safeGetValue(action: () -> T): T? {
+inline fun <T> safeGetValue(action: () -> T): T? {
     var value: T? = null
     try {
         value = action.invoke()
