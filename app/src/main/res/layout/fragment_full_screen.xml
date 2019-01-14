@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -41,5 +42,40 @@
                 android:onClick="@{model::onClickExistFullScreen}"
                 android:text="Exist Full Screen" />
         </LinearLayout>
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="@={model.SYSTEM_UI_FLAG_LOW_PROFILE}"
+            android:padding="16dp"
+            android:text="SYSTEM_UI_FLAG_LOW_PROFILE" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="@={model.SYSTEM_UI_FLAG_FULLSCREEN}"
+            android:padding="16dp"
+            android:text="SYSTEM_UI_FLAG_FULLSCREEN" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="@={model.SYSTEM_UI_FLAG_HIDE_NAVIGATION}"
+            android:padding="16dp"
+            android:text="SYSTEM_UI_FLAG_HIDE_NAVIGATION" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="@={model.SYSTEM_UI_FLAG_IMMERSIVE}"
+            android:padding="16dp"
+            android:text="SYSTEM_UI_FLAG_IMMERSIVE" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="@={model.SYSTEM_UI_FLAG_IMMERSIVE_STICKY}"
+            android:padding="16dp"
+            android:text="SYSTEM_UI_FLAG_IMMERSIVE_STICKY" />
     </LinearLayout>
 </layout>

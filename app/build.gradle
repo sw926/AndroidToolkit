@@ -45,11 +45,9 @@ dependencies {
 
 
     implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha09"
-    // use -ktx for Kotlin
-    implementation "android.arch.navigation:navigation-ui-ktx:1.0.0-alpha09" // use -ktx for Kotlin
-
-// optional - Test helpers
+    implementation "android.arch.navigation:navigation-ui-ktx:1.0.0-alpha09"
     androidTestImplementation "android.arch.navigation:navigation-testing-ktx:1.0.0-alpha06"
-    // use -ktx for Kotlin
+
+    implementation 'me.yokeyword:fragmentation:1.3.6'
 
 }

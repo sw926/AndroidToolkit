@@ -31,6 +31,10 @@ class HomeFragment : Fragment() {
         btnStatusVisibility.setOnClickListener {
             it.findNavController().navigate(R.id.action_homeFragment_to_statsVisiblityFragment)
         }
+
+        btnTransStats.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homeFragment_to_transStatsActivity)
+        }
     }
 
 
