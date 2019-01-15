@@ -29,12 +29,9 @@ class HomeFragment : Fragment() {
         }
 
         btnStatusVisibility.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_statsVisiblityFragment)
+            it.findNavController().navigate(R.id.action_homeFragment_to_statsVisibilityActivity)
         }
 
-        btnTransStats.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_transStatsActivity)
-        }
     }
 
 

@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="AppTheme" />
+
+    <style name="AppTheme.TransStats">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

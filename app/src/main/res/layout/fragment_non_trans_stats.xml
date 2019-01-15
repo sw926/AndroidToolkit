@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutNotTransParent"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:text="Hello World,Hello World,Hello World,Hello World,Hello World,Hello World,Hello World,Hello World"
+        android:textSize="36sp" />
+</android.support.design.widget.CoordinatorLayout>

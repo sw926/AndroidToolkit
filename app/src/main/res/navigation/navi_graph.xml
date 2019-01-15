@@ -12,26 +12,18 @@
             android:id="@+id/action_homeFragment_to_fullScreenFragment"
             app:destination="@id/fullScreenFragment" />
         <action
-            android:id="@+id/action_homeFragment_to_statsVisiblityFragment"
-            app:destination="@id/statsVisiblityFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_transStatsActivity"
-            app:destination="@id/transStatsActivity" />
+            android:id="@+id/action_homeFragment_to_statsVisibilityActivity"
+            app:destination="@id/statsVisibilityActivity" />
     </fragment>
     <fragment
         android:id="@+id/fullScreenFragment"
         android:name="com.sw926.toolkitdemo.FullScreenFragment"
         android:label="Full Screen"
         tools:layout="@layout/fragment_full_screen" />
-    <fragment
-        android:id="@+id/statsVisiblityFragment"
-        android:name="com.sw926.toolkitdemo.StatsVisibilityFragment"
-        android:label="fragment_stats_visiblity"
-        tools:layout="@layout/fragment_stats_visibility" />
     <activity
-        android:id="@+id/transStatsActivity"
-        android:name="com.sw926.toolkitdemo.TransStatsActivity"
-        android:label="activity_trans_stats"
-        tools:layout="@layout/activity_trans_stats" />
+        android:id="@+id/statsVisibilityActivity"
+        android:name="com.sw926.toolkitdemo.StatsVisibilityActivity"
+        android:label="activity_StatsVisibility"
+        tools:layout="@layout/activity_stats_visibility" />
 
 </navigation>
