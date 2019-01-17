@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_homeFragment_to_statsVisibilityActivity"
             app:destination="@id/statsVisibilityActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_fitSystemWindowActivity"
+            app:destination="@id/fitSystemWindowActivity" />
     </fragment>
     <fragment
         android:id="@+id/fullScreenFragment"
@@ -25,5 +28,10 @@
         android:name="com.sw926.toolkitdemo.StatsVisibilityActivity"
         android:label="activity_StatsVisibility"
         tools:layout="@layout/activity_stats_visibility" />
+    <activity
+        android:id="@+id/fitSystemWindowActivity"
+        android:name="com.sw926.toolkitdemo.FitSystemWindowActivity"
+        android:label="activity_fit_system_window"
+        tools:layout="@layout/activity_fit_system_window" />
 
 </navigation>

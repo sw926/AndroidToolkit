@@ -32,6 +32,10 @@ class HomeFragment : Fragment() {
             it.findNavController().navigate(R.id.action_homeFragment_to_statsVisibilityActivity)
         }
 
+        btnFitSystemWindowActivity.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homeFragment_to_fitSystemWindowActivity)
+        }
+
     }
 
 
