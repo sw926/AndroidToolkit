@@ -8,14 +8,14 @@
         <!--如果 windowDrawsSystemBarBackgrounds 为 false，状态栏和导航栏背景都是黑色的-->
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
 
-        <!--<item name="android:windowTranslucentStatus">false</item>-->
-        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
-        <!--<item name="android:windowTranslucentNavigation">false</item>-->
-        <!--<item name="android:navigationBarColor">@android:color/transparent</item>-->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
 
         <!--或者使用系统半透明效果-->
-        <item name="android:windowTranslucentStatus">true</item>
-        <item name="android:windowTranslucentNavigation">true</item>
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
 
     </style>
 </resources>
